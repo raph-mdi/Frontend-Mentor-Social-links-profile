@@ -1,17 +1,40 @@
+# Frontend Mentor - Social Links Profile
 
-## Résumé des modifications
+Ce projet est une intégration d'un composant de profil avec des liens sociaux, basé sur un défi proposé par la plateforme Frontend Mentor. L'objectif était de reproduire fidèlement le design fourni tout en adoptant une structure de code logique et maintenable.
 
-| Section | Contenu |
-|---------|---------|
-| **Description du projet** | Page de profil de réseaux sociaux pour Frontend Mentor |
-| **Approche du code** | Explication de la structure HTML et du CSS intégré |
-| **Structure des fichiers** | Arborescence du projet |
-| **Comment utiliser** | Instructions d'ouverture et d'utilisation |
-| **Personnalisation** | Guide pour adapter le template |
-| **Crédit** | Source du défi et polices utilisées |
 
-Le README explique notamment :
-- L'utilisation de balises sémantique (`<main>`, `<nav>`, `<footer>`)
-- Le CSS intégré directement dans le fichier HTML
-- Les choix de conception (design sombre, centrage, accessibilité)
-- Comment personnaliser le profil avec vos propres informations
+## Présentation du projet
+
+Le projet consiste en une carte de profil épurée présentant l'avatar d'une développeuse front-end, sa localisation, une courte biographie, ainsi qu'une liste de boutons cliquables redirigeant vers ses différents réseaux sociaux (GitHub, Frontend Mentor, LinkedIn, Twitter et Instagram).
+
+## Ma démarche et processus de développement
+
+### 1. Structure HTML5 sémantique
+Pour ce projet, j'ai mis un point d'honneur à utiliser des balises HTML5 sémantiques afin de garantir une bonne accessibilité et un code compréhensible :
+- L'utilisation de la balise `<main>` pour envelopper le contenu principal de la page.
+- Une division (`<div>`) centrale faisant office de conteneur pour le composant carte.
+- Une balise `<nav>` dédiée pour regrouper l'ensemble des liens sociaux, ce qui est structurellement plus logique pour les lecteurs d'écran qu'une simple suite de boutons isolés.
+- Un élément `<footer>` en bas de page pour l'attribution du défi, séparé du flux principal.
+
+### 2. Choix de l'architecture CSS
+Le style a été embarqué directement dans le document via une balise `<style>` pour centraliser l'exercice de manière autonome. 
+- **Polices et typographie :** Intégration de la police Google Fonts "Inter", avec une gestion précise des graisses (`font-weight: 700`) et des tailles relatives pour correspondre au modèle.
+- **Réinitialisation des marges :** Application de classes spécifiques (`.en-tête`) pour neutraliser les marges par défaut des balises de titre (`<h2>`, `<h5>`) afin d'éviter les décalages imprévus causés par les styles natifs des navigateurs.
+
+### 3. Gestion du positionnement et de l'alignement
+Le positionnement de la carte s'appuie sur des valeurs de marges calculées en pourcentage (`margin-left`, `margin-top`) pour centrer le bloc sur l'écran de manière fluide. 
+
+Pour le bloc de navigation interne, l'utilisation de Flexbox (`display: flex`) configuré en colonne (`flex-direction: column`) a permis d'aligner verticalement et de centrer parfaitement tous les boutons d'interaction, assurant une régularité visuelle sur l'ensemble du profil.
+
+## Technologies utilisées
+
+- HTML5 (Sémantique)
+- CSS3 (Flexbox, sélecteurs d'identifiants et de classes)
+- Google Fonts (Famille de polices Inter)
+- Cloudinary (Hébergement et optimisation de la ressource d'image de l'avatar)
+
+## Optimisations futures
+
+Dans le cadre d'une évolution de ce projet vers un code encore plus robuste et conforme aux standards de production :
+- **Amélioration du Responsive :** Remplacement des largeurs fixes en pixels (`width: 1000px`, `width: 400px`) par des propriétés plus flexibles comme `max-width` associées à des Media Queries, afin de garantir un affichage optimal sur l'ensemble des terminaux mobiles.
+- **Factorisation du CSS :** Nettoyage des accolades vides et centralisation des propriétés isolées afin de rendre la feuille de style plus compacte et plus lisible pour la maintenance à long terme.
