@@ -33,8 +33,31 @@ Pour le bloc de navigation interne, l'utilisation de Flexbox (`display: flex`) c
 - Google Fonts (Famille de polices Inter)
 - Cloudinary (Hébergement et optimisation de la ressource d'image de l'avatar)
 
-## Optimisations futures
+## Optimisations 
 
-Dans le cadre d'une évolution de ce projet vers un code encore plus robuste et conforme aux standards de production :
-- **Amélioration du Responsive :** Remplacement des largeurs fixes en pixels (`width: 1000px`, `width: 400px`) par des propriétés plus flexibles comme `max-width` associées à des Media Queries, afin de garantir un affichage optimal sur l'ensemble des terminaux mobiles.
+Intégration du @media querry afin de rendre le design responsive sur les appareils mobiles 
+ 
+ @media (max-width: 480px) and (min-width: 360px) {
+  
+  main {
+    width: 100vw;       
+    height: auto;      
+    margin-left: 0;     
+    min-height: 100vh;  
+    padding-bottom: 40px; 
+  }
+
+  /* Ta logique de carte fluide qui est excellente */
+  div {
+    width: 86vw;        
+    height: auto;       
+    margin-left: auto;  
+    margin-right: auto; 
+    margin-top: 20%;    
+    padding-bottom: 30px;
+  }
+  button {
+    width: 85%;         
+  }
+}
 - **Factorisation du CSS :** Nettoyage des accolades vides et centralisation des propriétés isolées afin de rendre la feuille de style plus compacte et plus lisible pour la maintenance à long terme.
