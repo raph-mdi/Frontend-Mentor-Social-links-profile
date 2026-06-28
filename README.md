@@ -36,7 +36,7 @@ Pour le bloc de navigation interne, l'utilisation de Flexbox (`display: flex`) c
 ## Optimisations 
 
 Intégration du @media querry afin de rendre le design responsive sur les appareils mobiles 
- 
+ ```css
  @media (max-width: 480px) and (min-width: 360px) {
   
   main {
@@ -60,4 +60,4 @@ Intégration du @media querry afin de rendre le design responsive sur les appare
     width: 85%;         
   }
 }
-- **Factorisation du CSS :** Nettoyage des accolades vides et centralisation des propriétés isolées afin de rendre la feuille de style plus compacte et plus lisible pour la maintenance à long terme.
+```
